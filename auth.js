@@ -1,10 +1,9 @@
 // auth.js
 const express = require('express');
-const router = express.Router();
+const router = express();
 
 // Dummy user data for demo purposes
 const users = [];
-
 // Signup Route
 router.post('/signup', (req, res) => {
     const { name, email, password } = req.body;
